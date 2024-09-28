@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
 <body>
     <main>
-        <img  id="imagem" src="imagens/capalogin.jpg" alt="museu do louvre">
-        <h1>Login</h1>
-        <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-        <form action="" method="post">
-            <div>
-                <label for="iemail"><img class="icone" src="imagens/person_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="ícone de usuário" ></label> <input type="email" name="email" id="iemail" required placeholder="seu e-mail">
-                <br>
+        <section id="login">
+            <div id="imagem">
+                <!-- Aqui vai uma imagem no css -->
             </div>
-            <div>
-                <label for="isenha"><img class="icone" src="imagens/vpn_key_alert_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Chave"></label>
-                <input type="password" name="senha" id="isenha" required minlength="5" maxlength="10" placeholder="sua senha">
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
+                <form action="" method="post">
+                    
+                     <div class="campo">
+                        <i class="material-symbols-outlined">person</i>
+                        <input type="email" name="email" id="iemail" required placeholder="seu e-mail">
+                        <label for="iemail"> Login </label>
+                    </div>
+                                    
+                    <div class="campo">
+                        <i class="material-symbols-outlined">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" required minlength="5" maxlength="10" placeholder="sua senha">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    
+                    <input id="submit" type="submit" value="Entrar">
+                    <button>Esqueci a senha <i class="material-symbols-outlined">mail</i></button>
+                </form>
             </div>
-            <input id="submit" type="submit" value="Entrar">
-            <button>Esqueci a senha <img id="imgsenha" src="imagens/mail_lock_24dp_000000_FILL0_wght400_GRAD0_opsz24.png""></button>
-        </form>
+        </section>
     </main>
 </body>
 </html>
